@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countdown Timer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Griffy&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <section>
+    <h1>Countdown Timer</h1>
+
+    <p>
+      <span id="hours">00</span>&#65306;
+      <span id="min">00</span>&#65306;
+      <span id="sec">00</span>
+    </p>
+
+    <div class="time_input">
+      <input type="number" name="hour" id="hours_inp" placeholder="h" min="0">
+      <input type="number" name="minute" id="min_inp" placeholder="m" min="0" max="59">
+      <input type="number" name="second" id="sec_inp" placeholder="s" min="0" max="59">
+    </div>
+
+    <div class="button_design">
+      <button id="start_btn">start</button>
+      <button id="stop_btn">stop</button>
+      <button id="reset_btn">reset</button>
+    </div>
+
+  </section>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

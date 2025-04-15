@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Griffy", system-ui;
+}
+
+:root {
+  --text-color: #fff;
+  --background-color: #111;
+  --button-color: #f0f0f0;
+  --start-color: #42a5f5;
+  --stop-color: #ff0400;
+  --reset-color: #88ff00;
+}
+
+body {
+  text-align: center;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+section {
+  height: 100vh;
+  margin-top: 20px;
+}
+
+h1 {
+  margin-bottom: 50px;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: .1em;
+}
+
+p {
+  margin-bottom: 40px;
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: .02em;
+}
+
+.time_input {
+  margin: 0 auto 60px;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type="number"] {
+  height: 50px;
+  padding: 20px 10px;
+  width: 90px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.button_design {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  display: block;
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: var(--background-color);
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: .1em;
+  border: none;
+}
+
+#start_btn {
+  color: var(--start-color);
+}
+
+#start_btn:hover {}
+
+
+#stop_btn {
+  color: var(--stop-color);
+}
+
+#stop_btn:hover {}
+
+#reset_btn {
+  color: var(--reset-color);
+}
+
+#reset_btn:hover {}
+
+/* 終了演出用 */
+.timer_end {
+  background-color: var(--text-color);
+  color: var(--background-color);
+}
