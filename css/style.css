@@ -10,7 +10,7 @@
 :root {
   --text-color: #fff;
   --background-color: #111;
-  --button-color: #f0f0f0;
+  --button-color: #333;
   --start-color: #42a5f5;
   --stop-color: #ff0400;
   --reset-color: #88ff00;
@@ -24,12 +24,12 @@ body {
 
 section {
   height: 100vh;
-  margin-top: 20px;
 }
 
 h1 {
   margin-bottom: 50px;
-  font-size: 40px;
+  padding-top: 20px;
+  font-size: 30px;
   font-weight: 400;
   line-height: 1;
   letter-spacing: .1em;
@@ -37,7 +37,7 @@ h1 {
 
 p {
   margin-bottom: 40px;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: .02em;
@@ -74,27 +74,48 @@ button {
   border: none;
 }
 
+#start_btn:hover,
+#reset_btn:hover {
+  transform: rotate(-3deg) scale(1.2);
+  transition: all 0.2s ease;
+  background-color: var(--button-color);
+}
+
 #start_btn {
   color: var(--start-color);
 }
-
-#start_btn:hover {}
-
 
 #stop_btn {
   color: var(--stop-color);
 }
 
-#stop_btn:hover {}
+#stop_btn:hover {
+  transform: rotate(3deg) scale(1.2);
+  transition: all 0.2s ease;
+  background-color: var(--button-color);
+}
 
 #reset_btn {
   color: var(--reset-color);
 }
 
-#reset_btn:hover {}
-
 /* 終了演出用 */
 .timer_end {
   background-color: var(--text-color);
   color: var(--background-color);
+}
+
+@media screen and (min-width:768px) {
+
+  h1 {
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: .1em;
+  }
+
+  p {
+    font-size: 60px;
+    line-height: 1.2;
+    letter-spacing: .02em;
+  }
 }
